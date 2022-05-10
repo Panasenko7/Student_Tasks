@@ -4,8 +4,10 @@
     #return "".join(sorted(A.lower())).strip() == "".join(sorted(B.lower())).strip()
 #print (verify_anagrams("Buckethead ","DeathCubeK"))    #True
 
-is_anagram = lambda x1, x2: sorted(x1.lower()) == sorted(x2.lower())
+# is_anagram = lambda x1, x2: sorted(x1.lower()) == sorted(x2.lower())
 
+def is_anagram(str1, str2):
+    return sorted(str1.lower()) == sorted(str2.lower())
 
 #Results
 print(is_anagram("Buckethead", "DeathCubeK"))
