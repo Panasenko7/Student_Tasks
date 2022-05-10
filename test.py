@@ -29,5 +29,3 @@ print(modified_string)
 
 # проверить,есть ли такой символ в строке
 
-is_pre
-print(
