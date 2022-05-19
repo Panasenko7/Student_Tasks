@@ -11,10 +11,14 @@ input_amount_of_money = int(input('Input amount of UAH:'))
 currency_list = []
 
 while True:
-    input_currency = input(f'Enter the currency you need:')
+    input_currency = input(f'Enter the currency you need:').upper()
     if input_currency == '':
         break
     currency_list.append(input_currency.upper())
+
+    if input_currency not in exchange_rates:
+        print("No currency like this")
+
 
 for currency_name, currency_ratio in exchange_rates.items():
     if currency_name in currency_list:
