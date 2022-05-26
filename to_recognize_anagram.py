@@ -13,3 +13,12 @@ def is_anagram(str1, str2):
 print(is_anagram("Buckethead", "DeathCubeK"))
 print(is_anagram("elvise", "livees"))
 print(is_anagram("elvis", "dead"))
+
+
+
+# def anagrams(word, words):
+#     res_list = []
+#     for each_word in words:
+#         if sorted(word.lower()) == sorted(each_word.lower()):
+#             res_list.append(each_word)
+#     return res_list
