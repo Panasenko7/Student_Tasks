@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/my_css.css') }}">
+    <meta charset="UTF-8">
+    <title>my_first_html</title>
+</head>
+<body>
+<form action="/save_data" method="post">
+    <div>
+        <label for="input_1">What greeting do you want to say?</label>
+        <input name="input_1" id="input_1" value="Hi">
+    </div>
+    <div>
+        <label for="input_2">Who do you want to say it to?</label>
+        <input name="input_2" id="input_2" value="Mom">
+        <h1><a href="/show_data">I'M A LINK TO SHOW DATA</a></h1>
+        <p><a href="/show_inverted_data">I'M A LINK TO SHOW INVERTED DATA</a></p>
+    </div>
+    <div>
+        <button>Send my greetings</button>
+    </div>
+</form>
+</body>
+</html>
